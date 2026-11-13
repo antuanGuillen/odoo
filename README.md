@@ -46,6 +46,4 @@ Lee `docs/00-ruta-de-aprendizaje.md` y avanza en orden. Cada práctica incluye o
 Este repositorio es un material educativo independiente, no oficial ni afiliado a Odoo S.A. Los ejemplos son deliberadamente pequeños para facilitar su comprensión. Haz copias de seguridad antes de probar en un servidor con datos reales.
 
 ## Documentación de referencia
-- [Documentación oficial Odoo 19](https://www.odoo.com/documentation/19.0/)
-- [Tutoriales para desarrolladores Odoo 19](https://www.odoo.com/documentation/19.0/developer/tutorials.html)
-- [Tutorial Server framework 101](https://www.odoo.com/documentation/19.0/developer/tutorials/server_framework_101.html)
+-  https://antuanguillen.github.io/odoo/
