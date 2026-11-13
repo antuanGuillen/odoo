@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_sge_libro_list" model="ir.ui.view">
+        <field name="name">sge.libro.list</field>
+        <field name="model">sge.libro</field>
+        <field name="arch" type="xml">
+            <list string="Libros">
+                <field name="name"/>
+                <field name="autor"/>
+                <field name="isbn"/>
+                <field name="paginas"/>
+                <field name="disponible"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_sge_libro_form" model="ir.ui.view">
+        <field name="name">sge.libro.form</field>
+        <field name="model">sge.libro</field>
+        <field name="arch" type="xml">
+            <form string="Libro">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="autor"/>
+                            <field name="isbn"/>
+                        </group>
+                        <group>
+                            <field name="paginas"/>
+                            <field name="fecha_publicacion"/>
+                            <field name="disponible"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Notas">
+                            <field name="notas"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_sge_libros" model="ir.actions.act_window">
+        <field name="name">Libros</field>
+        <field name="res_model">sge.libro</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_sge_biblioteca_root" name="Biblioteca SGE" sequence="10"/>
+    <menuitem id="menu_sge_libros"
+              name="Libros"
+              parent="menu_sge_biblioteca_root"
+              action="action_sge_libros"
+              sequence="10"/>
+</odoo>
